@@ -7,6 +7,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+ 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="Untree.co">
@@ -42,7 +43,7 @@
     <div class="site-mobile-menu-body"></div>
   </div>
   
-  <div class="container">
+  <div class="container" >
 
 
     <nav class="site-nav">
@@ -56,22 +57,22 @@
           <ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu">
             <li class="active"><a href="index.html">Home</a></li>
             <li class="has-children">
-              <a href="#">Industries</a>
+              <a href="#section-ind">Industries</a>
               <ul class="dropdown">
-                <li><a href="#">Pharmaceutical</a></li>
-                <li><a href="#">Engineering goods</a></li>
-                <li><a href="#">Defence</a></li>
-                <li><a href="#">Electronics</a></li>
+                <li><a href="#section-ind">Pharmaceutical</a></li>
+                <li><a href="#goods">Engineering goods</a></li>
+                <li><a href="#defence">Defence</a></li>
+                <li><a href="#electronics">Electronics</a></li>
               </ul>
       
             </li>
 
             <li class="has-children">
-              <a href="#">Services</a>
+              <a href="#section-service">Services</a>
               <ul class="dropdown">
-                <li><a href="#">Air Freight</a></li>
-                <li><a href="#">Sea Freight</a></li>
-                <li><a href="#">Custom Clearance</a></li>
+                <li><a href="#air">Air Freight</a></li>
+                <li><a href="#sea">Sea Freight</a></li>
+                <li><a href="#custom">Custom Clearance</a></li>
               </ul>
       
             </li>
@@ -108,12 +109,12 @@
             </div>
 
             <div class="col-lg-4">
-              <form action="#" class="form-register">
+              <form action="mailto:info@moversglobal777.com" class="form-register">
                 <h2 class="mb-2">Get a quote?</h2>
                 <p>Drop in your details out support team will reach you out. </p>
-                <input type="text" class="form-control" placeholder="Enter name">
-                <input type="text" class="form-control" placeholder="Enter email">
-                <input type="text" class="form-control" placeholder="Phone number">
+                <input type="text" name="name" class="form-control" placeholder="Enter name">
+                <input type="text" name="email"class="form-control" placeholder="Enter email">
+                <input type="text" name="phone" class="form-control" placeholder="Phone number">
                 <div class="form-group">
                   <label class="control control--checkbox d-flex align-items-center">
                     <span class="caption"><small>Sign up for email updates</small></span>
@@ -121,7 +122,7 @@
                     <div class="control__indicator"></div>
                   </label>
                 </div>
-                <input type="submit" class="btn btn-primary btn-block" value="Submit">
+                <input  type="submit" class="btn btn-primary btn-block" value="Submit">
               </form>
             </div>
           </div>
@@ -131,52 +132,54 @@
     </div>
   </div>
 
-  <div class="section">
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col-lg-7 mx-auto text-center">
-          <h2>The <span class="text-primary">Service</span> You Get From Us</h2>
-          <p></p>
-        </div>
 
+
+ <div id="section-service" class="section">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-lg-7 mx-auto text-center">
+        <h2>The <span class="text-primary">Service</span> You Get From Us</h2>
+        <p></p>
       </div>
-      <div class="row">
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <a href="#" class="service-block d-flex">
-            <span class="wrap-icon">
-              <span class="feather-command"></span>
-            </span>
-            <div class="text">
-              <h2 class="mb-2">Air Freight</h2>
-              <p>We will fly your shipment and deliver it anywhere on time with no hassle.</p>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <a href="#" class="service-block d-flex">
-            <span class="wrap-icon">
-              <span class="feather-anchor"></span>
-            </span>
-            <div class="text">
-              <h2 class="mb-2">Sea Freight</h2>
-              <p>We always prioritize  your shipment, whether you are new/existing customer.</p>
-            </div>
-          </a>
-        </div>
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <a href="#" class="service-block d-flex">
-            <span class="wrap-icon">
-              <span class="feather-send"></span>
-            </span>
-            <div class="text">
-              <h2 class="mb-2">Custom Clearence</h2>
-              <p>We undertake the job of Customs Clearance from all the major ports.</p>
-            </div>
-          </a>
-        </div>
+
+    </div>
+    <div class="row">
+      <div id="air" class="col-lg-4 mb-4 mb-lg-0">
+        <a href="#" class="service-block d-flex">
+          <span class="wrap-icon">
+            <span class="feather-command"></span>
+          </span>
+          <div class="text">
+            <h2 class="mb-2">Air Freight</h2>
+            <p>We will fly your shipment and deliver it anywhere on time with no hassle.</p>
+          </div>
+        </a>
+      </div>
+      <div id="sea"class="col-lg-4 mb-4 mb-lg-0">
+        <a href="#" class="service-block d-flex">
+          <span class="wrap-icon">
+            <span class="feather-anchor"></span>
+          </span>
+          <div class="text">
+            <h2 class="mb-2">Sea Freight</h2>
+            <p>We always prioritize  your shipment, whether you are new/existing customer.</p>
+          </div>
+        </a>
+      </div>
+      <div id="custom" class="col-lg-4 mb-4 mb-lg-0">
+        <a href="#" class="service-block d-flex">
+          <span class="wrap-icon">
+            <span class="feather-send"></span>
+          </span>
+          <div class="text">
+            <h2 class="mb-2">Custom Clearence</h2>
+            <p>We undertake the job of Customs Clearance from all the major ports.</p>
+          </div>
+        </a>
       </div>
     </div>
   </div>
+</div>
 
   <div class="section bg-light py-lg-0 pt-0 pb-5 mt-5">
     <div class="container">
@@ -264,63 +267,65 @@
     </div>
   </div>
 
-
-  <div class="section services bg-light">
-    <div class="container">
-      <div class="row mb-4">
-        <div class="col text-center" data-aos="fade-up" data-aos-delay="0">
-          <h2 class="heading">INDUSTRY EXPERTS</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6 col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="d-flex service active">
-            <div class="wrap-icon">
-              <span><span class="feather-layers"></span></span>
-            </div>
-            <div class="contents">
-              <h3>Pharmaceutical Logistics</h3>
-              <p>With our well-planned product handling, our experts work to successfully navigate through the complexities of pharmaceutical logistics and overcome them.</p>
-            </div>
+  <div>
+    <div class="section services bg-light">
+      <div class="container">
+        <div class="row mb-4">
+          <div  id="section-ind"class="col text-center" data-aos="fade-up" data-aos-delay="0">
+            <h2 class="heading">INDUSTRY EXPERTS</h2>
           </div>
         </div>
-        <div class="col-md-6 col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="d-flex service">
-            <div class="wrap-icon">
-              <span><span class="feather-anchor"></span></span>
-            </div>
-            <div class="contents">
-              <h3>Engineering goods</h3>
-              <p>Timeliness along with safety, make two key requirements of engineering and manufacturing logistics. We at Movers Global Logistics are here to take up all such challenges for you</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="d-flex service">
-            <div class="wrap-icon">
-              <span><span class="feather-send"></span></span>
-            </div>
-            <div class="contents">
-              <h3>Defence </h3>
-              <p>Logistical solutions in the defence Industry comes with a ton of complexities and often slow downs the process. Our in-house experts provides an efficient logistical solutions for defence sector.</p>
+        <div class="row">
+          <div class="col-md-6 col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="d-flex service active">
+              <div class="wrap-icon">
+                <span><span class="feather-layers"></span></span>
+              </div>
+              <div  class="contents">
+                <h3>Pharmaceutical Logistics</h3>
+                <p>With our well-planned product handling, our experts work to successfully navigate through the complexities of pharmaceutical logistics and overcome them.</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-6 col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="400">
-          <div class="d-flex service">
-            <div class="wrap-icon">
-              <span><span class="feather-command"></span></span>
-            </div>
-            <div class="contents">
-              <h3>Electronics</h3>
-              <p>Electronics such as tablets, computers and components are fragile and must be protected against damage. Retail packaging is usually not enough to provide adequate protection during ...</p>
+          <div id = "goods"class="col-md-6 col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="d-flex service">
+              <div class="wrap-icon">
+                <span><span class="feather-anchor"></span></span>
+              </div>
+              <div  class="contents">
+                <h3>Engineering goods</h3>
+                <p>Timeliness along with safety, make two key requirements of engineering and manufacturing logistics. We at Movers Global Logistics are here to take up all such challenges for you</p>
+              </div>
             </div>
           </div>
+  
+          <div id ="defence" class="col-md-6 col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="d-flex service">
+              <div class="wrap-icon">
+                <span><span class="feather-send"></span></span>
+              </div>
+              <div  class="contents">
+                <h3>Defence </h3>
+                <p>Logistical solutions in the defence Industry comes with a ton of complexities and often slow downs the process. Our in-house experts provides an efficient logistical solutions for defence sector.</p>
+              </div>
+            </div>
+          </div>
+          <div id ="electronics" class="col-md-6 col-lg-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="d-flex service">
+              <div class="wrap-icon">
+                <span><span class="feather-command"></span></span>
+              </div>
+              <div class="contents">
+                <h3>Electronics</h3>
+                <p>Electronics such as tablets, computers and components are fragile and must be protected against damage. Retail packaging is usually not enough to provide adequate protection during ...</p>
+              </div>
+            </div>
+          </div>
+  
         </div>
-
       </div>
     </div>
+  
   </div>
 
 
